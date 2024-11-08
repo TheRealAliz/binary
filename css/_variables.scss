@@ -1,0 +1,39 @@
+@font-face {
+    font-family: shabnam;
+    src: url(/assets/fonts/shabnam/Shabnam.ttf);
+}
+
+@font-face {
+    font-family: shabnamBold;
+    src: url(/assets/fonts/shabnam/Shabnam-Bold.ttf);
+}
+
+@font-face {
+    font-family: shabnamMedium;
+    src: url(/assets/fonts/shabnam/Shabnam-Medium.ttf);
+}
+
+@font-face {
+    font-family: shabnamThin;
+    src: url(/assets/fonts/shabnam/Shabnam-Thin.ttf);
+}
+
+@mixin flex($dir: row, $justify: center, $align: center, $gap: 0, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex: {
+        direction: $dir;
+        wrap: $wrap;
+    }
+    gap: $gap;
+}
+
+@mixin font($family: shabnam, $weight: normal, $size: 16px, $color: black) {
+    font: {
+        family: $family;
+        weight: $weight;
+        size: $size;
+    }
+    color: $color;
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: shabnam;
+  src: url(/assets/fonts/shabnam/Shabnam.ttf);
+}
+@font-face {
+  font-family: shabnamBold;
+  src: url(/assets/fonts/shabnam/Shabnam-Bold.ttf);
+}
+@font-face {
+  font-family: shabnamMedium;
+  src: url(/assets/fonts/shabnam/Shabnam-Medium.ttf);
+}
+@font-face {
+  font-family: shabnamThin;
+  src: url(/assets/fonts/shabnam/Shabnam-Thin.ttf);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 7px 9px -11px black;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+}
+.container .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+}
+.container .checkbox-container span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+.container .demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px #bdbcbc;
+  outline: none;
+  background-color: #fffbe9;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+input[type=text]:focus {
+  border-color: #2958be;
+  border-width: 2px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.glass-button {
+  font-family: shabnam;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(68, 68, 68, 0.1294117647);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+.glass-button:hover {
+  background-color: rgba(68, 68, 68, 0.2470588235);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #f5e392;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+body.persian {
+  font-family: shabnam;
+}/*# sourceMappingURL=style.css.map */

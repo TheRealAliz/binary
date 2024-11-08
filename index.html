@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Decimal to Binary</title>
 </head>
 <body>
 
-    <div class="container">
+    <!-- <div class="flex-row">
+        <button class="glass-button">FA</button>
+    </div> -->
+
+    <div class="container" id="decimalToBinary">
         <h1>Decimal to Binary</h1>
-        <input type="text" id="entry" />
+        <input type="text" id="entry" oninput="decimalToBinary()" />
         <div class="checkbox-container">
             <input type="checkbox" id="negative-check" />
             <span>Considering the negative sign</span>
         </div>
-        <div class="demo">Enter something</div>
+        <div class="demo"></div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="container" id="binaryToDecimal">
+        <h1>Binary to Decimal</h1>
+        <input type="text" id="entry" oninput="binaryToDecimal()" />
+        <div class="demo"></div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
