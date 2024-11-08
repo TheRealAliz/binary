@@ -9,8 +9,9 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 20px;
     background-color: #f5e392;
 }
 
@@ -22,7 +23,7 @@ body {
     gap: 20px;
     padding: 20px 40px;
     width: calc(100% - 20px);
-    max-width: 350px;
+    max-width: 500px;
     height: auto;
     border-radius: 7px;
     background-color: white;
